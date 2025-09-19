@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <nav className="header">
-  <h1 className="logo">&lt;Inowei<span className="name">Anagha</span> /&gt;</h1>
+      <p className="logo">&lt;Inowei<span className="name">Anagha</span> /&gt;</p>
       <ul className="nav-links">
         <li>Home</li>
         <li>About</li>
