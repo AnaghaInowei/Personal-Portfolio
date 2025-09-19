@@ -5,6 +5,8 @@
   text-align: center; */
 }
 
+/* navbar styling */
+
 .navbar {
   background-color: #282c34;
   /* min-height: 10vh; */
@@ -43,6 +45,14 @@
 .nav-links li:hover {
   color: #61dafb;
   transition: ease-in-out 0.2s;
+}
+
+/* header styling */
+header {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  min-height: 75vh;
 }
 
 /* .logo {
