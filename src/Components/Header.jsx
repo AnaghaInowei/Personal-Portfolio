@@ -5,6 +5,11 @@ export default function Header() {
       <h1>Inowei Anagha</h1>
       <p className="work">Front-End Web Developer</p>
       <p className="txt">I craft responsive websites where technology meets creativity</p>
+      <div className="btn">
+        <button className="btn-view">View my work</button>
+        <button className="btn-contact">Contact Me</button>
+      </div>
+      
     </header>
   );
 }
