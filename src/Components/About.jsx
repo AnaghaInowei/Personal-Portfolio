@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section className="about">
-      <h4>About Me</h4>
+      <h4 className="me">About Me</h4>
       <div className="content">
         <div className="text">
             <h3>Front-End Developer & UI Enthusiast</h3>
@@ -12,7 +12,7 @@ export default function About() {
               My journey in web development began with a curiosity about how websites work, which evolved into a deep passion for creating seamless user interfaces and experiences. I specialize in modern JavaScript frameworks like React, and I'm constantly exploring new technologies to enhance my skill set.
             </p>
             
-            <button>Lets Connect</button>
+            <button className="connect">Lets Connect</button>
         </div>
         <div className="skillcard">
           <h4>Professional Skills</h4>
