@@ -17,13 +17,11 @@ export default function About() {
         <div className="skillcard">
           <h4>Professional Skills</h4>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Tailwind</li>
-            <li>JavaScript</li> 
-            <li>React</li>
-            <li>Git & GitHub</li>
+            <li>Web Development</li>
             <li>Responsive Design</li>
+            <li>UI/UX Design</li>
+            <li>JavaScript & React</li> 
+            <li>CSS & Taiwind</li>
           </ul>
         </div>
       </div>

@@ -13,7 +13,8 @@
 /* navbar styling */
 
 .navbar {
-  background-color: #111827;
+  /* background-color: #111827; */
+  background: linear-gradient(90deg, #111827 0%, #2563EB 100%);
   /* min-height: 10vh; */
   display: flex;
   flex-direction: row;
@@ -24,7 +25,8 @@
   padding: 0 2rem;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 4px rgb(0, 0, 50);
+  /* box-shadow: 0 2px 4px rgb(0, 0, 50); */
+  z-index: 100;
 }
 
 .logo {
@@ -46,6 +48,16 @@
 
 .nav-links li {
   font-size: 1rem;
+
+/* hide/show on scroll */
+.navbar {
+  transition: transform 240ms ease-in-out, opacity 240ms ease-in-out;
+}
+.navbar--hidden {
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
+}
   cursor: pointer;
   /* padding-right: 1.5rem; */
 }
@@ -62,7 +74,10 @@ header {
   justify-content: center;
   text-align: center;
   /* padding: 4rem 2rem; */
-  background-color: #111827;
+  /* fallback color */
+  /* background-color: #111827; */
+  /* smooth left-to-right blue gradient */
+  background: linear-gradient(90deg, #111827 0%, #2563EB 100%);
   color: white;
   height: 89vh;
 }
@@ -108,12 +123,14 @@ h1 {
   margin: 0.5rem 0 1.5rem 0;
 }
 
-.btn-view {
+.btn-view,
+.connect {
   background-color: #60A5FA;
   color: white;
 }
 
-.btn-view:hover {
+.btn-view:hover,
+.connect:hover {
   background-color: #325785;
   scale: 1.05;
 }
@@ -121,12 +138,12 @@ h1 {
 .btn-contact {
   background-color: #111827;
   color: white;
-  /* border: 2px solid #60A5FA; */
+  border: 2px solid white;
 }
 
 .btn-contact:hover {
-  background-color: #60A5FA;
-  color: white;
+  background-color: #fff;
+  color: #111827;
   scale: 1.05;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.929);
 }
@@ -193,15 +210,14 @@ h3, h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: left;
-    padding: 1rem;
+    padding: .5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 45rem;
-    max-height: 351.88px;
+    max-height: 18rem;
     border-radius: .5rem;
     background-color: #4B5563;
-    margin-top: 5rem;
+    /* margin-top: 3rem; */
     box-shadow: 2px 2px 10px rgba(62, 62, 62, 0.929);
   }
 
@@ -227,15 +243,7 @@ h3, h4 {
   line-height: 1.4;
 }
 
-.connect {
-  background-color: #60A5FA;
-  color: white;
-}
 
-.connect:hover{
-  scale: 1.05;
-  box-shadow: 2px 2px 10px rgba(39, 39, 47, 0.929);
-}
 
 @media (max-width: 768px) {
   .content {
