@@ -170,7 +170,7 @@ background-color: #1F2937;
   align-items: flex-start;
   justify-content: center;
   gap: 1rem;
-  max-width: 327.01px;
+  /* max-width: 327.01px; */
 
   /* flex: 1;
   min-width: 300px;
@@ -194,10 +194,10 @@ h3, h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 327.01px;
+    width: 45rem;
     max-height: 351.88px;
     border-radius: .5rem;
     background-color: #4B5563;
