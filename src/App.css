@@ -277,7 +277,7 @@ h3, h4 {
 }
 
 .card {
-  background: #0b1320;
+  background: #374151;
   border-radius: 0.75rem;
   overflow: hidden;
   flex: 1 1 360px; /* grow, shrink, base */
@@ -313,8 +313,8 @@ h3, h4 {
 }
 
 .card .tech span {
-  background: #2563EB;
-  color: #fff;
+  background: #1E3A8A;
+  color: #93C5FD;
   padding: 0.25rem 0.6rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -322,11 +322,14 @@ h3, h4 {
 
 .card h3 {
   margin: 0.75rem 1rem 0.25rem 1rem;
+  color: #ffffff;
+  text-align: left;
 }
 
 .card p {
   margin: 0 1rem 1rem 1rem;
   color: #cbd5e1;
+  text-align: left;
 }
 
 .card a {
@@ -334,6 +337,8 @@ h3, h4 {
   color: #60A5FA;
   text-decoration: none;
 }
+
+
 
 @media (max-width: 840px) {
   .cards {
@@ -343,4 +348,38 @@ h3, h4 {
     width: 100%;
     max-width: 720px;
   }
+}
+
+/* Responsive tweaks */
+@media (max-width: 1200px) {
+  h1 { font-size: 4.25rem; }
+  .me { font-size: 2.25rem; }
+  .txt { font-size: 1.1rem; }
+  .cards { gap: 1.5rem; }
+}
+
+@media (max-width: 1024px) {
+  header { height: 72vh; padding: 3rem 1.5rem; }
+  .navbar { padding: 0 1.25rem; font-size: 0.95rem; }
+  .card { max-width: 360px; }
+}
+
+@media (max-width: 768px) {
+  header { padding: 2.5rem 1rem; height: auto; }
+  h1 { font-size: 2.75rem; }
+  .work { font-size: 1.5rem; }
+  .nav-links { display: none; } /* hide full menu on small screens */
+  .logo { font-size: 1.1rem; }
+  .cards { padding: 0 1rem; gap: 1rem; }
+  .card img { height: 180px; }
+}
+
+@media (max-width: 480px) {
+  .btn { flex-direction: column; gap: 0.75rem; }
+  .btn-view, .btn-contact { width: 100%; }
+  .card { padding-bottom: 0.75rem; }
+  .card h3 { font-size: 1.05rem; }
+  .card p { font-size: 0.95rem; }
+  .card img { height: 140px; }
+  .me { font-size: 1.6rem; }
 }
