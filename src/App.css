@@ -295,9 +295,15 @@ h3, h4 {
 }
 
 .cards {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  margin-top: 1.5rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 1.5rem;
 }
 
