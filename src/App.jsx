@@ -3,6 +3,7 @@ import Navbar from './Components/navbar'
 import Header from './Components/Header'
 import About from './Components/About'
 import Projects from './Components/Projects'
+import Techstack from './Components/Tech-stack'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <About />
       <Projects />
+      <Techstack />
     </>
   )
 }

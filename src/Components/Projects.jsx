@@ -1,3 +1,5 @@
+import RentDirect from "../assets/RentDirect.png";
+
 export default function Projects() {
   return (
     <section className="projects">
@@ -9,7 +11,7 @@ export default function Projects() {
         </p>
         <div className="cards">
           <div className="card">
-            <img src="./src/assets/RentDirect.png" alt="Rent Direct Landing Page" width={100} />
+            <img src={RentDirect} alt="Rent Direct Landing Page" className="project-image" />
             <div className="tech">
               <span>HTML</span>
               <span>CSS</span>
@@ -20,7 +22,7 @@ export default function Projects() {
             <a href="#">View Project</a>
           </div>
           <div className="card">
-            <img src="./src/assets/RentDirect.png" alt="Rent Direct Landing Page" width={100} />
+            <img src={RentDirect} alt="Rent Direct Landing Page" className="project-image" />
             <div className="tech">
               <span>HTML</span>
               <span>CSS</span>
@@ -31,7 +33,7 @@ export default function Projects() {
             <a href="#">View Project</a>
           </div>
           <div className="card">
-            <img src="./src/assets/RentDirect.png" alt="Rent Direct Landing Page" width={100} />
+            <img src={RentDirect} alt="Rent Direct Landing Page" className="project-image" />
             <div className="tech">
               <span>HTML</span>
               <span>CSS</span>
